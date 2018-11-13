@@ -6,3 +6,10 @@ build
 mason_packages
 *.dSYM
 tests/output-polyjson
+.buckd
+buck-out
+.buckconfig.local
+BUCKAROO_DEPS
+buckaroo
+buckaroo-packages
+cache

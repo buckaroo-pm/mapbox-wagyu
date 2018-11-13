@@ -1,0 +1,11 @@
+[cxx]
+  should_remap_host_platform = true
+  cxxflags = "-std=c++14"
+
+[project]
+  ignore = .git
+
+[repositories]
+  buckaroo.github.buckaroo-pm.Catch2 = ./buckaroo-packages/github/buckaroo-pm/Catch2
+  buckaroo.github.buckaroo-pm.mapbox-geometry.hpp = ./buckaroo-packages/github/buckaroo-pm/mapbox-geometry.hpp
+  buckaroo.github.buckaroo-pm.mapbox-variant = ./buckaroo-packages/github/buckaroo-pm/mapbox-variant
