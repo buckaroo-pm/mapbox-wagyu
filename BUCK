@@ -1,3 +1,5 @@
+load('//:buckaroo_macros.bzl', 'buckaroo_deps')
+
 prebuilt_cxx_library(
   name = 'wagyu', 
   header_namespace = '', 
@@ -5,9 +7,7 @@ prebuilt_cxx_library(
   exported_headers = subdir_glob([
     ('include', '**/*.hpp'), 
   ]), 
-  deps = [
-    'buckaroo.github.buckaroo-pm.mapbox-geometry.hpp//:geometry', 
-  ], 
+  deps = buckaroo_deps(), 
   visibility = [
     'PUBLIC', 
   ], 
